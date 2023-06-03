@@ -37,8 +37,8 @@
 }
 #nav_1 #searchbar select {
   color: #666666;
-  height: 45px;
-  width: 3.5vw;
+  height: 40px;
+  width: 3.6vw;
   font-size: 1.6vh;
   padding: 9px;
   border-radius: 3px 0px 0px 3px;
@@ -57,7 +57,7 @@
 }
 #nav_1 #search {
   color: #666666;
-  height: 45px;
+  height: 40px;
   width: 49vw;
   font-size: 1.9vh;
   padding: 0;
@@ -69,8 +69,8 @@
   outline: none;
 }
 #nav_1 #icon {
-  height: 35px;
-  width: 2.3vw;
+  height: 40px;
+  width: 3vw;
   padding: 5px;
   border-radius: 0px 3px 3px 0px;
   border: none;
@@ -227,6 +227,8 @@
 }
 #productos .categorias .categoria .seeMore {
   color: #0C788B;
+  font-size: 1.7vh;
+  padding: 3%;
 }
 #productos .categorias .categoria h1 {
   color: #0F1111;
