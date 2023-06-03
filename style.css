@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  top: 0;
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav_1 {
+  width: 100%;
+  height: 70px;
+  padding: 0px 5px 0px 0px;
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav_1 #logo {
+  width: 7.5%;
+  padding: 7px 5px;
+  border: 1.5px solid transparent;
+}
+#nav_1 #logo:hover {
+  border: 1.5px solid white;
+  cursor: pointer;
+}
+#nav_1 #searchbar {
+  display: flex;
+  border: 3px solid transparent;
+  margin: 0px 10px;
+}
+#nav_1 #searchbar:focus {
+  outline: 3px solid orange;
+  border-radius: 5.9px;
+}
+#nav_1 #searchbar select {
+  color: #666666;
+  height: 45px;
+  width: 3.5vw;
+  font-size: 1.6vh;
+  padding: 9px;
+  border-radius: 3px 0px 0px 3px;
+  border: none;
+  border-right: solid 0.7px #CDCDCD;
+}
+#nav_1 #searchbar select:hover {
+  background-color: #dbdbdb;
+}
+#nav_1 #searchbar select:focus {
+  color: black;
+  background-color: #dbdbdb;
+}
+#nav_1 #searchbar select option {
+  color: black;
+}
+#nav_1 #search {
+  color: #666666;
+  height: 45px;
+  width: 49vw;
+  font-size: 1.9vh;
+  padding: 0;
+  border-radius: 0px;
+  border: none;
+  padding-left: 8px;
+}
+#nav_1 #search:focus {
+  outline: none;
+}
+#nav_1 #icon {
+  height: 35px;
+  width: 2.3vw;
+  padding: 5px;
+  border-radius: 0px 3px 3px 0px;
+  border: none;
+  background-color: #FEBD69;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav_1 #icon:hover {
+  background-color: #fa9f16;
+  cursor: pointer;
+}
+#nav_1 #bandera {
+  width: 20px;
+  height: 14px;
+}
+#nav_1 #cart {
+  width: 3vw;
+  height: 4vh;
+}
+#nav_1 #arrow {
+  font-size: 15px;
+  color: #A7ACB2;
+}
+#nav_1 .navSections {
+  display: flex;
+  border: 1.5px solid transparent;
+  padding: 12px 7px;
+  gap: 0%;
+  align-items: flex-end;
+}
+#nav_1 .navSections:hover {
+  border: 1.5px solid white;
+  cursor: pointer;
+}
+#nav_1 #returns {
+  border: 1.5px solid transparent;
+  padding: 10px 7px 10px 7px;
+}
+#nav_1 #returns:hover {
+  border: 1.5px solid white;
+  cursor: pointer;
+}
+#nav_1 #returns #deliverTo {
+  color: #C6C9CC;
+}
+#nav_1 .bold {
+  font-size: 1.8vh;
+  font-weight: bold;
+}
+#nav_1 .thin {
+  font-size: 1.5vh;
+}
+
+#nav_2 {
+  height: 3.8vh;
+  padding: 5px 9px 5px 10px;
+  background-color: #232F3E;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+#nav_2 p {
+  font-size: 15px;
+  font-weight: normal;
+}
+#nav_2 #menu {
+  display: flex;
+  border: none;
+  padding: 7px 12px;
+  gap: 10%;
+  align-items: center;
+}
+#nav_2 #menu:hover {
+  outline: 1px solid white;
+  cursor: pointer;
+}
+#nav_2 .nav2Sections {
+  display: flex;
+  border: none;
+  padding: 10px 10px;
+  gap: 10%;
+  align-items: center;
+}
+#nav_2 .nav2Sections:hover {
+  outline: 1px solid white;
+  cursor: pointer;
+}
+
+#productos {
+  width: 100%;
+  background-color: #E3E6E6;
+}
+#productos_fondo {
+  width: 100%;
+  position: relative;
+}
+#productos_fondo img {
+  width: 100%;
+}
+#productos_fondo::after {
+  content: "";
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, transparent, #E3E6E6);
+}
+#productos .categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 23.5%);
+  width: 100%;
+  z-index: 1;
+  margin: -23% 0px 0px 1.5%;
+  gap: 15px;
+}
+#productos .categorias .categoria {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  padding: 2%;
+  gap: 3%;
+  z-index: 1;
+}
+#productos .categorias .categoria_sections {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  place-items: center;
+  width: 100%;
+  gap: 2%;
+}
+#productos .categorias .categoria_sections_img1f {
+  width: 95%;
+  aspect-ratio: 1.2/1;
+}
+#productos .categorias .categoria_img2f {
+  width: 95%;
+  align-self: center;
+}
+#productos .categorias .categoria_img3f {
+  width: 95%;
+}
+#productos .categorias .categoria #imgEspecial {
+  width: 95%;
+  height: 80%;
+  background-image: url("./img/new_arrivals.jpg");
+  background-size: 130%;
+  background-position: -35px 0px;
+  align-self: center;
+}
+#productos .categorias .categoria .seeMore {
+  color: #0C788B;
+}
+#productos .categorias .categoria h1 {
+  color: #0F1111;
+  font-size: 2.5vh;
+  padding: 2%;
+}
+#productos .categorias .categoria p {
+  color: #0F1111;
+  font-size: 1.4vh;
+}/*# sourceMappingURL=style.css.map */

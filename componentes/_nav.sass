@@ -1,0 +1,80 @@
+#nav_1
+    @include nav(100%, 70px, 0px 5px 0px 0px)
+    #logo
+        @include media(7.5%,null)
+        padding: 7px 5px
+        border: 1.5px solid transparent 
+        &:hover
+            border: 1.5px solid white
+            cursor: pointer
+    #searchbar
+        display: flex
+        border: 3px solid transparent 
+        margin: 0px 10px
+        &:focus
+            outline: 3px solid orange
+            border-radius: 5.9px
+        select
+            @include searchbar($color:#666666,$height:45px,$width:3.5vw,$size:1.6vh,$padding:9px,$radius:3px 0px 0px 3px,$border:none)
+            border-right: solid 0.7px #CDCDCD
+            &:hover
+                background-color: #dbdbdb
+            &:focus            
+                color: black
+                background-color: #dbdbdb
+            option
+                color: black
+    #search
+        @include searchbar($color:#666666,$height:45px,$width:49vw,$size:1.9vh,$padding: 0,$radius: 0px, $border:none)
+        padding-left: 8px
+        &:focus
+            outline: none
+    #icon
+        @include searchbar($color:null,$height:35px,$width:2.3vw,$size:null,$padding: 5px,$radius: 0px 3px 3px 0px,$border: none)
+        background-color: $amarillo
+        font-size: 28px
+        display: flex
+        justify-content: center
+        align-items: center
+        &:hover
+            background-color: #fa9f16 
+            cursor: pointer
+    #bandera 
+        @include media(20px, 14px)
+    #cart
+        @include media(3vw, 4vh)
+    #arrow
+        font-size: 15px
+        color: #A7ACB2
+    .navSections
+        @include navSections()
+        &:hover
+            border: 1.5px solid white
+            cursor: pointer
+    #returns
+        border: 1.5px solid transparent
+        padding: 10px 7px 10px 7px
+        &:hover
+            border: 1.5px solid white
+            cursor: pointer
+        #deliverTo
+            color: $gris
+    .bold
+        @include fuentebold(1.8vh,bold)
+    .thin
+        font-size:1.5vh
+        
+#nav_2
+    @include nav(null, 3.8vh, 5px 9px 5px 10px ,$fondoNav2,flex,center,left)
+    p
+        @include fuentebold(15px,normal)
+    #menu
+        @include navSections(flex,none,7px 12px,10%,center)
+        &:hover
+            outline: 1px solid white
+            cursor: pointer
+    .nav2Sections
+        @include navSections(flex,none,10px 10px,10%,center)
+        &:hover
+            outline: 1px solid white
+            cursor: pointer

@@ -1,0 +1,44 @@
+*
+    box-sizing: border-box
+    margin: 0
+    top: 0
+    font-size: 10px
+    text-decoration: none
+    color: white
+    font-family: Arial, Helvetica, sans-serif
+
+//mixins
+@mixin nav($width:100%, $height:null, $padding:5px, $bgcolor:$fondoNav1, $display:flex, $align:center, $justify:center)
+    width: $width
+    height: $height
+    padding: $padding
+    background-color: $bgcolor
+    display: $display
+    align-items: $align
+    justify-content: $justify
+
+@mixin navSections($display: flex, $border:1.5px solid transparent, $padding:12px 7px, $gap:0%, $align:flex-end)
+    display: $display
+    border: $border
+    padding: $padding
+    gap: $gap
+    align-items: $align 
+    
+
+@mixin fuentebold($tamano, $weight)
+    font-size: $tamano
+    font-weight: $weight
+@mixin searchbar($color,$height,$width,$size,$padding,$radius,$border)
+    color: $color
+    height: $height
+    width: $width
+    font-size: $size
+    padding: $padding
+    border-radius: $radius
+    border: $border
+@mixin media($width, $height)
+    width: $width
+    height: $height
+
+@mixin background-img($img)
+    background-image: $img
