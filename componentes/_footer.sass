@@ -1,0 +1,187 @@
+#newUser
+    width: 100%
+    height: 26vh
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-top: 4vh
+    &_recommendations
+        width: 100%
+        height: 18vh
+        border: 1px solid #DDDDDD
+        border-radius: 5px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 5%
+        p
+            color: black
+            font-size: 1.5vh
+        button
+            width: 15vw
+            height: 3.7vh
+            color: black
+            border: 1px solid #E6A400
+            border-radius: 5px
+            font-weight: bold
+            font-size: 1.4vh
+            background: linear-gradient(to bottom, #fcdc8c, #f4b61b)
+            &:hover
+                cursor: pointer
+        span
+            color: black
+            font-size: 1.3vh
+        a 
+            color: $seeMore
+            font-size: 1.3vh
+            &:hover
+                color: #B24803
+                text-decoration: underline
+
+//footer
+#back
+    width: 100%
+    height: 7vh
+    background-color: $backgroundBack
+    display: flex
+    align-items: center
+    justify-content: center
+    a
+        font-size: 1.7vh
+    &:hover
+        background-color: #40536b
+        cursor: pointer
+.footer_1
+    background-color: $bgFooter1
+    width: 100%
+    height: 58vh
+    display: grid
+    padding-top: 3%
+    grid-template-columns: repeat(4,16%)
+    gap: 3%
+    align-self: center
+    place-content: center 
+    border-bottom: 1px solid #3A4553
+    &_sect1
+        display: flex
+        flex-direction: column
+        &_a
+            display: grid
+            grid-template-rows: repeat(8, 1fr)
+            gap: 10%
+    &_sect2
+        display: flex
+        flex-direction: column
+        width: 70%
+        &_a
+            display: grid
+            grid-template-rows: repeat(8, 1fr)
+            gap: 3px
+    &_sect3
+        display: flex
+        flex-direction: column
+        &_a
+            display: grid
+            grid-template-rows: repeat(8, 1fr)
+            gap: 10px
+    &_sect4
+        display: flex
+        flex-direction: column
+        width: 58%
+        &_a
+            display: grid
+            grid-template-rows: repeat(9, 1fr)
+            gap: 10px
+    a
+        font-size: 1.8vh
+        color: #D7D5D8
+        &:hover
+            text-decoration: underline
+    h1
+        font-size: 2.2vh
+        padding-bottom: 10%
+    
+.footer_2
+    background-color: $bgFooter1
+    width: 100%
+    height: 15vh
+    display: flex
+    gap: 0.5%
+    align-items: center
+    justify-content: center 
+    border-bottom: 1px solid #3A4553
+    a
+        font-size: 1.5vh
+        padding-right: 3%
+    .logo
+        width: 11%
+        padding-right: 5%
+    &_section
+        display: flex
+        align-items: center
+        border: 1px solid #848688
+        border-radius: 3px
+        gap: 10%
+        padding: 0.6% 1.2% 0.6% 1%
+        a
+            font-size: 1.5vh
+            padding-right: 10%
+    &_section2
+        border: 1px solid #848688
+        border-radius: 3px
+        padding: 0.7% 1.2% 0.7% 1%
+    &_section3
+        border: 1px solid #848688
+        border-radius: 3px
+        padding: 0.6% 1.2% 0.6% 1%
+        width: 10vw
+    #language
+        font-size: 15px
+    #arrows
+        font-size: 12px
+        padding-right: 10px
+.footer_3
+    background-color: #131A22
+    width: 100%
+    height: 50vh
+    border-bottom: 1px solid #3A4553
+    &_grid
+        display: grid
+        grid-template-columns: repeat(7,1fr)
+        align-self: center
+        place-items: center
+        padding: 2% 10% 2% 10%
+        &_sect
+            width: 50%
+            padding-bottom: 30%
+            a
+                color: #999795
+                font-size: 1.6vh
+                &:hover
+                    text-decoration: underline
+            &_white
+            p
+                color: #DDD7D7
+                font-size: 1.6vh
+                &:hover
+                    text-decoration: underline
+    &_copyright
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 100%
+        gap: 1%
+        p
+            font-size: 1.4vh
+            padding-top: 0.5%
+            color: #DDD7D7
+        &_sect
+            width: 30%
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 4%
+            a
+                font-size: 1.4vh

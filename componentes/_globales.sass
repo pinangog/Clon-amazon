@@ -40,5 +40,9 @@
     width: $width
     height: $height
 
-@mixin background-img($img)
-    background-image: $img
+@mixin background-img($width:95%, $height:80%, $size: 130%, $position: -35px 0px, $align:center)
+    width: $width
+    height: $height
+    background-size: $size
+    background-position: $position
+    align-self: $align
